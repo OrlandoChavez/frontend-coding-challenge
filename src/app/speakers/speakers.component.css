@@ -1,0 +1,31 @@
+table {
+  width: 100%;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td, th {
+  width: 25%;
+}
+
+.mat-mdc-row .mat-mdc-card {
+  box-shadow: none;
+}
+.mat-mdc-row .mat-mdc-card .mat-mdc-card-header {
+  padding: 10px 0 0;
+}
+
+.mat-mdc-row .mat-mdc-cell {
+  cursor: pointer;
+}
+tr.mat-mdc-row:hover td .mat-mdc-card,
+tr.mat-mdc-row:hover td {
+  background-color: #efefef;
+}
+
+.nowrap {
+  white-space: nowrap;
+}

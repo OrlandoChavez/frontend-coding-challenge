@@ -1,0 +1,5 @@
+<div class="content" role="main">
+  <h1>{{title}}</h1>
+  <speakers class="min-width-50" *ngIf="!onDetails"></speakers>
+  <speaker-details class="min-width-50" *ngIf="onDetails" [speaker]="speaker"></speaker-details>
+</div>

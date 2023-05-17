@@ -1,0 +1,36 @@
+<h2 style="text-align: center;">Speacker Details</h2>
+<section>
+  <button mat-raised-button color="primary" (click)="goToList()">Back to List</button>
+</section>
+<br>
+<mat-divider></mat-divider>
+<br>
+<mat-card class="example-card" *ngIf="speaker">
+  <mat-card-header>
+    <mat-card-title-group>
+
+      <mat-card-subtitle>Title</mat-card-subtitle>
+      <mat-card-title> {{speaker.name.title}} </mat-card-title>
+
+      <mat-card-subtitle class="padding-top-10">Name</mat-card-subtitle>
+      <mat-card-title> {{speaker.name.first}} {{speaker.name.last}} </mat-card-title>
+
+      <mat-card-subtitle class="padding-top-10">Gender</mat-card-subtitle>
+      <mat-card-title> {{speaker.gender | uppercase}} </mat-card-title>
+
+      <mat-card-subtitle class="padding-top-10">Email</mat-card-subtitle>
+      <mat-card-title> {{speaker.email}} </mat-card-title>
+
+      <mat-card-subtitle class="padding-top-10">Phone</mat-card-subtitle>
+      <mat-card-title> {{speaker.phone}} </mat-card-title>
+
+      <mat-card-subtitle class="padding-top-10">Cell</mat-card-subtitle>
+      <mat-card-title> {{speaker.cell}} </mat-card-title>
+
+      <img mat-card-xl-image src="{{speaker.picture.large}}" >
+    </mat-card-title-group>
+  </mat-card-header>
+  <mat-card-content>
+
+  </mat-card-content>
+</mat-card>
